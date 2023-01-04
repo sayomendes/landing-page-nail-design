@@ -6,30 +6,31 @@
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.75%;
 }
 
 .heading {
     background-color: #c68d8b;
-    width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 0;
-    box-shadow: 10px 0 10px black;
+    padding: 1rem 0;
+    box-shadow: 1rem 0 1rem black;
 }
 
 .heading .logotype .logo {
-    height: 60px;
+    height: 6rem;
 }
 
 .heading .items li {
     display: inline;
     list-style: none;
-    padding: 20px;
+    padding: 2rem;
     
 }
 .heading .items li a {
     text-decoration: none;
     color: #ffff;
+    font-size: 1.6rem;
 }
 
 #background-video {
@@ -55,31 +56,31 @@ html{
 }
 
 .apresentation .header {
-    border-bottom: 5px solid #c68d8b;
-    border-left: 5px solid #c68d8b;
-    border-radius: 10px;
+    border-bottom: 0.5rem solid #c68d8b;
+    border-left: 0.5rem solid #c68d8b;
+    border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 12px;
-    margin: 130px 0 0 200px;
-    min-width: 300px;
+    padding: 1.2rem;
+    margin: 13rem 0 0 20rem;
+    min-width: 30rem;
     animation: fade 2s;
 }
 
 .apresentation .header h1{
     color: #fff;
-    font-size: 42px;
-    text-shadow: 1px 1px 1px black;
+    font-size: 4.2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 
 .apresentation .header h2{
     color: #fff;
-    font-size: 32px;
-    text-shadow: 1px 1px 1px black;
+    font-size: 3.2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 
 .apresentation .content {
@@ -91,17 +92,17 @@ html{
 .apresentation div p {
     color: #fff;
     text-align: justify;
-    font-size: 48px;
-    text-shadow: 1px 1px 1px black;
+    font-size: 4.8rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
     margin: 0;
 
     animation: fade 4s;
 
-    border-bottom: 5px solid #c68d8b;
-    border-right: 5px solid #c68d8b;
-    border-radius: 10px;
+    border-bottom: 0.5rem solid #c68d8b;
+    border-right: 0.5rem solid #c68d8b;
+    border-radius: 1rem;
 
-    padding: 20px;
+    padding: 2rem;
 }
 
 @keyframes fade {
@@ -122,20 +123,20 @@ html{
 
 .benefits .title-benefits {
     color: #ffff;
-    font-size: 40px;
-    text-shadow: 1px 1px 3px #c68d8b;
+    font-size: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem #c68d8b;
 }
 
 .benefits .separator {
-    height: 150px;
-    border-right: 3px solid;
+    height: 15rem;
+    border-right: 0.3rem solid;
     color: #ffff;
 }
 
 .benefits .overflow {
     overflow-y: scroll;
-    height: 400px;
-    max-width: 700px;
+    height: 40rem;
+    max-width: 70rem;
     scroll-snap-type: y mandatory;
 
     
@@ -143,13 +144,13 @@ html{
 
 .benefits .overflow::-webkit-scrollbar-thumb{
     background-color: #ffff;
-    border-radius: 7px;
+    border-radius: 0.7rem;
     
 }
 
 .benefits .overflow::-webkit-scrollbar{
     background-color: transparent;
-    width: 3px;
+    width: 0.3rem;
     
 }
 
@@ -161,14 +162,14 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    height: 400px;
+    padding: 0 2rem;
+    height: 40rem;
     
 }
 
 .benefits li p {
-    padding: 17px;
-    font-size: 20px;
+    padding: 1.7rem;
+    font-size: 2rem;
     color: #ffff;
     text-align: justify;
 }
@@ -190,17 +191,17 @@ html{
 
 .protocol-service .card-protocol h1 {
     color: #ffff;
-    font-size: 30px;
-    min-height: 75px;
+    font-size: 3rem;
+    min-height: 7.5rem;
     display: flex;
     align-items: center;
-    padding: 25px 0;
-    text-shadow: 1px 1px 3px #c68d8b;
+    padding: 2.5rem 0;
+    text-shadow: 0.1rem 0.1rem 0.3rem #c68d8b;
 
 }
 
 .protocol-service .card-protocol .items-protocol {
-    padding: 0 50px;
+    padding: 0 5rem;
 }
 
 .protocol-service .list {
@@ -210,9 +211,9 @@ html{
 
 .protocol-service .card-protocol li {
     color: #ffff;
-    padding: 7px;
-    font-size: 20px;
-    text-shadow: 1px 1px 3px #c68d8b;
+    padding: 0.7rem;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem #c68d8b;
 
 }
 
@@ -229,7 +230,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 4rem;
     color: #ffff;
 }
 
@@ -237,8 +238,8 @@ html{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
     grid-auto-flow: dense;
-    gap: 25px;
-    padding: 80px;
+    gap: 2.5rem;
+    padding: 8rem;
     min-height: 100vh;
 }
 
@@ -247,7 +248,7 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 40px;
+    height: 4rem;
 }
 
 .types .card {
@@ -255,11 +256,11 @@ html{
     justify-content: center;
     align-items: center;
     background-color: #ffff;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px black;
-    max-height: 175px;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1.5rem black;
+    max-height: 175rem;
 
-    border: 2px solid salmon;
+    border: 0.2rem solid salmon;
 }
 
 .types .card .header {
@@ -270,7 +271,7 @@ html{
 }
 
 .types .card .body h2 {
-    font-size: 22px;
+    font-size: 2.2rem;
     margin: 0;
     color: salmon;
 }
@@ -281,14 +282,14 @@ html{
     justify-content: space-evenly;
     align-items: flex-start;
 
-    padding: 0 30px;
+    padding: 0 3rem;
     height: 100%;
 }
 
 .types .card .header img {
-    width: 100px;
+    width: 10rem;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 1rem 0 0 1rem;
 }
 
 /*=============================================*/
@@ -300,23 +301,23 @@ html{
   
 .types-nails img {
     max-width: 100%;
-    width: 500px;
-    height: 500px;
+    width: 50rem;
+    height: 50rem;
     object-fit: cover;
     display: block;
 }
 
 .slide {
-    max-width: 380px;
+    max-width: 38rem;
     display: grid;
-    box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.4rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
     animation: fade 2s;
 }
 
 .slide-items {
     position: relative;
     grid-area: 1/1;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .slide-nav {
@@ -331,7 +332,7 @@ html{
 
 .slide-items > * {
     position: absolute;
-    top: 0px;
+    top: 0;
     opacity: 0;
     pointer-events: none;
 }
@@ -356,11 +357,11 @@ html{
 .slide-thumb > span {
     flex: 1;
     display: block;
-    height: 5px;
-    width: 50px;
+    height: 0.5rem;
+    width: 5rem;
     background: rgba(0, 0, 0, 0.4);
-    margin: 5px;
-    border-radius: 3px;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
     overflow: hidden;
 }
 
@@ -369,7 +370,7 @@ html{
     display: block;
     height: inherit;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 3px;
+    border-radius: 0.3rem;
     transform: translateX(-100%);
     animation: thumb 5s forwards linear;
 }
@@ -378,15 +379,6 @@ html{
     to {
         transform: initial;
     }
-}
-
-
-@media (max-width: 600px)
-{
-  .facet_sidebar
-   {
-    display: none;
-   }
 }
 
 /*=============================================*/
