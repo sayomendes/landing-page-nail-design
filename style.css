@@ -18,7 +18,7 @@ html{
 }
 
 .heading .logotype .logo {
-    height: 6rem;
+    height: 10rem;
 }
 
 .heading .items li {
@@ -115,7 +115,7 @@ html{
 
 .benefits {
     display: flex;
-    background-color: rgb(162, 131, 86);
+    background-color:#c68d8b;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -124,7 +124,6 @@ html{
 .benefits .title-benefits {
     color: #ffff;
     font-size: 4rem;
-    text-shadow: 0.1rem 0.1rem 0.3rem #c68d8b;
 }
 
 .benefits .separator {
@@ -167,6 +166,10 @@ html{
     
 }
 
+.benefits li h2 {
+    font-size: 3rem;
+}
+
 .benefits li p {
     padding: 1.7rem;
     font-size: 2rem;
@@ -178,8 +181,9 @@ html{
 
 .protocol-service {
     min-height: 100vh;
-    background-color: #cea997;
+    background-color: rgb(162, 131, 86);
     display: flex;
+    justify-content: center;
     padding: 25vh 0;
 }
 
@@ -219,19 +223,31 @@ html{
 
 /*=============================================*/
 
-.banana {
+.types-stiles {
     background-color: #b75552;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-top: 0.1rem solid #ffff;
+
 }
 
-.banana h1 {
+.types-stiles h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 4rem;
+
     color: #ffff;
+    border: 0.1rem solid #ffff;
+
+    border-radius: 1rem;
+    background-color: #b75552;
+    margin-top: -4rem;
+    padding: 3rem;
+
+    box-shadow: 0.3rem 0.3rem 1.5rem black;
 }
 
 .types {
@@ -261,6 +277,11 @@ html{
     max-height: 175rem;
 
     border: 0.2rem solid salmon;
+    transition: 1s;
+}
+
+.types .card:hover {
+    box-shadow: 1.5rem 1.5rem 3rem rgb(0, 0, 0);
 }
 
 .types .card .header {
@@ -276,6 +297,11 @@ html{
     color: salmon;
 }
 
+.types .card .body p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
 .types .card .body {
     display: flex;
     flex-direction: column;
@@ -287,7 +313,8 @@ html{
 }
 
 .types .card .header img {
-    width: 10rem;
+    width: 8rem;
+    height: 17rem;
     object-fit: cover;
     border-radius: 1rem 0 0 1rem;
 }
@@ -297,8 +324,27 @@ html{
 .types-nails {
     background-color: black;
     min-height: 100vh;
+    padding: 2rem;
 }
-  
+
+.types-nails .inspire-se {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+   
+}
+
+.types-nails .inspire-se img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.types-nails .inspire-se h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
 .types-nails img {
     max-width: 100%;
     width: 50rem;
@@ -312,6 +358,8 @@ html{
     display: grid;
     box-shadow: 0 0.4rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
     animation: fade 2s;
+
+    padding: 1rem;
 }
 
 .slide-items {
@@ -383,3 +431,161 @@ html{
 
 /*=============================================*/
 
+.services-velues {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffff;
+    padding: 5rem 0;
+}
+
+.services-velues img {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-velues .title-services-velues {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    padding-top: 5rem;
+    font-size: 2rem;
+    color: black;
+
+}
+
+.services-velues .items {
+    color: black;
+
+    display: flex;
+    align-items: center;
+}
+
+.services-velues .items .services {
+    margin: 0;
+    width: 100%;
+}
+
+.services-velues .items .services ul {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.services-velues .items .services ul li{
+    margin: 0;
+    align-self: flex-end;
+}
+
+.services-velues .items .velues {
+    margin: 0;
+    width: 100%;
+}
+
+.services-velues .items .velues ul {
+    width: 100%;
+}
+
+.services-velues .items li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+.services-velues .items .separator {
+    border: 0.1rem solid black;
+    margin: 0 20rem;
+    max-width: 1rem;
+    height: 6rem;
+}
+
+.services-velues .title-maintenance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+    color: black;
+
+    padding-top: 5rem;
+}
+
+/*=============================================*/
+
+.footer {
+    min-height: 15vh;
+    background-color: rgb(36, 36, 36);
+    padding: 2rem;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer .links li {
+    display: inline;
+    padding: 2rem;
+   
+}
+
+.footer .links li a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.footer .contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer .contatos span {
+    margin: 1rem;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.footer .contatos span:hover{
+    box-shadow: 0.2rem 0.2rem 2rem gray;
+}
+
+.footer .contatos span a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer .contatos span a i {
+    color: #ffff;
+}
+
+.footer .contatos .whats{
+    border: 0.2rem solid lightskyblue;
+}
+
+.footer .contatos .insta{
+    border: 0.2rem solid lightpink;
+}
+
+.footer .contatos .face{
+    border: 0.2rem solid goldenrod;
+}
+
+.footer .contatos .youtube{
+    border: 0.2rem solid lightcoral;
+}
