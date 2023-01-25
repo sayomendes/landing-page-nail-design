@@ -7,18 +7,15 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.75%;
+
 }
 
 .heading {
     background-color: #c68d8b;
     display: flex;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     box-shadow: 1rem 0 1rem black;
-}
-
-.heading .logotype .logo {
-    height: 10rem;
 }
 
 .heading .items li {
@@ -30,7 +27,7 @@ html{
 .heading .items li a {
     text-decoration: none;
     color: #ffff;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 #background-video {
@@ -124,6 +121,16 @@ html{
 .benefits .title-benefits {
     color: #ffff;
     font-size: 4rem;
+    text-shadow: 0.1rem 0 0.2rem black;
+
+    min-height: 80vh;
+    background-image: url('./assets/woman.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .benefits .separator {
@@ -142,15 +149,18 @@ html{
 }
 
 .benefits .overflow::-webkit-scrollbar-thumb{
-    background-color: #ffff;
-    border-radius: 0.7rem;
+    display: none;
     
 }
 
 .benefits .overflow::-webkit-scrollbar{
     background-color: transparent;
-    width: 0.3rem;
-    
+}
+
+.benefits ul li .line{
+    height: 3rem;
+    width: 0.2rem;
+    background-color: #fff;
 }
 
 .benefits li {
@@ -163,11 +173,25 @@ html{
     align-items: center;
     padding: 0 2rem;
     height: 40rem;
-    
+}
+
+.benefits li .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px ridge #fff;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+.benefits li div i{
+    margin: 0 0.8rem;
 }
 
 .benefits li h2 {
     font-size: 3rem;
+    text-shadow: 0.1rem 0 0.2rem black;
 }
 
 .benefits li p {
@@ -181,7 +205,7 @@ html{
 
 .protocol-service {
     min-height: 100vh;
-    background-color: rgb(162, 131, 86);
+    background-color: #d3a7a5;
     display: flex;
     justify-content: center;
     padding: 25vh 0;
@@ -224,95 +248,89 @@ html{
 /*=============================================*/
 
 .types-stiles {
-    background-color: #b75552;
+    background-color: #ecc1bf;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-top: 0.1rem solid #ffff;
+
+    min-height: 100vh;
 
 }
 
 .types-stiles h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    text-align: center;
     font-size: 4rem;
 
     color: #ffff;
-    border: 0.1rem solid #ffff;
+
+    border-bottom: 0.2rem solid #ffff;
+    text-shadow: 0.1rem 0.1rem 0.3rem #c68d8b;
 
     border-radius: 1rem;
-    background-color: #b75552;
-    margin-top: -4rem;
-    padding: 3rem;
 
-    box-shadow: 0.3rem 0.3rem 1.5rem black;
+    margin-top: 4rem;
 }
 
-.types {
+.types-stiles .types {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+    grid-template-columns: 53rem 53rem;
+    place-content: center;
     grid-auto-flow: dense;
-    gap: 2.5rem;
-    padding: 8rem;
-    min-height: 100vh;
+    gap: 5rem;
+    padding: 7rem;
+    width: 100%;
+
+    margin: 0;
 }
 
-.types h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 4rem;
-}
-
-.types .card {
+.types-stiles .types .card {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffff;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 1.5rem black;
-    max-height: 175rem;
 
-    border: 0.2rem solid salmon;
+    max-height: 175rem;
+    width: 50rem;
     transition: 1s;
 }
 
-.types .card:hover {
+.types-stiles .types .card:hover {
     box-shadow: 1.5rem 1.5rem 3rem rgb(0, 0, 0);
+    transform: scale(1.05);
 }
 
-.types .card .header {
+.types-stiles .types .card .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.types .card .body h2 {
+.types-stiles .types .card .body h2 {
     font-size: 2.2rem;
     margin: 0;
-    color: salmon;
+    color: #b75552;
 }
 
-.types .card .body p {
+.types-stiles .types .card .body p {
     font-size: 1.5rem;
     text-align: justify;
 }
 
-.types .card .body {
+.types-stiles .types .card .body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 
     padding: 0 3rem;
-    height: 100%;
+    height: 15rem;
 }
 
-.types .card .header img {
+.types-stiles .types .card .header img {
     width: 8rem;
     height: 17rem;
     object-fit: cover;
@@ -321,51 +339,98 @@ html{
 
 /*=============================================*/
 
-.types-nails {
-    background-color: black;
-    min-height: 100vh;
-    padding: 2rem;
-}
-
-.types-nails .inspire-se {
+.types-nails{
+    background-color: #f7e1e1;
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 3rem;
-   
+
+    padding: 5rem;
 }
 
-.types-nails .inspire-se img {
-    width: 15rem;
+.types-nails .header{
     height: 15rem;
+    width: 50rem;
+    background-image: url('./assets/text.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
-.types-nails .inspire-se h1 {
-    color: white;
+.types-nails .content{
+    min-height: 100vh;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.types-nails .informations {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    flex-direction: column;
+
+    height: 50rem;
+}
+
+.types-nails .informations div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+
+    margin: auto;
+}
+
+.types-nails .informations div img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.types-nails .informations div h1 {
+    color: #b75552;
     font-size: 2.5rem;
 }
 
-.types-nails img {
+.types-nails .slide img {
     max-width: 100%;
     width: 50rem;
     height: 50rem;
     object-fit: cover;
     display: block;
+
+    border-radius: 10px;
+
 }
 
 .slide {
     max-width: 38rem;
     display: grid;
-    box-shadow: 0 0.4rem 2rem 0.2rem rgba(0, 0, 0, 0.4);
+    
     animation: fade 2s;
 
-    padding: 1rem;
+    padding: 0.2rem;
+
+    border-radius: 1rem;
+    
 }
+
 
 .slide-items {
     position: relative;
     grid-area: 1/1;
     border-radius: 0.5rem;
+}
+
+.types-nails .slide .slide-nav {
+    border-radius: 1rem;
 }
 
 .slide-nav {
@@ -435,82 +500,77 @@ html{
     min-height: 100vh;
     margin: 0;
     background-color: #ffff;
-    padding: 5rem 0;
+}
+
+.services-velues .header {
+    text-align: center;
 }
 
 .services-velues img {
-    width: 30rem;
+    width: 15rem;
+
+    margin: 4rem 0;
+}
+
+.services-velues .content {
+    color: #b75552;
+
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 5rem;
 }
 
-.services-velues .title-services-velues {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-    padding-top: 5rem;
-    font-size: 2rem;
-    color: black;
-
-}
-
-.services-velues .items {
-    color: black;
+.services-velues .content .card {
+    margin: 0;
+    width: 40rem;
 
     display: flex;
-    align-items: center;
+    
+    border: 0.2rem solid #b75552;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem black;
+
+    background-color: transparent;
+
+    padding: 3rem;
+
+    transition: transform .8s;
 }
 
-.services-velues .items .services {
-    margin: 0;
+.services-velues .content .card:hover {
+    transform: scale(1.05);
+}
+
+.services-velues .content .card ul {
     width: 100%;
 }
 
-.services-velues .items .services ul {
-    width: 100%;
+.services-velues .content .card ul h1 {
+    text-align: center;
+    color: #b75552;
 
+    margin-bottom: 1.5rem;
+
+    border-bottom: 0.1rem solid #b75552;
+    width: 15rem;
+
+    padding: 1rem;
+}
+
+.services-velues .content .card ul li {
     display: flex;
-    flex-direction: column;
-}
+    justify-content: space-between;
 
-.services-velues .items .services ul li{
-    margin: 0;
-    align-self: flex-end;
-}
+    color: #b75552;
 
-.services-velues .items .velues {
-    margin: 0;
-    width: 100%;
-}
-
-.services-velues .items .velues ul {
-    width: 100%;
-}
-
-.services-velues .items li {
     list-style: none;
-    font-size: 1.5rem;
-    padding: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    padding: 0.9rem;
 }
-
-.services-velues .items .separator {
-    border: 0.1rem solid black;
-    margin: 0 20rem;
-    max-width: 1rem;
-    height: 6rem;
-}
-
-.services-velues .title-maintenance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 1.3rem;
-    color: black;
-
-    padding-top: 5rem;
+.services-velues .content .card ul li span {
+    margin: 0;
 }
 
 /*=============================================*/
@@ -575,17 +635,9 @@ html{
 }
 
 .footer .contatos .whats{
-    border: 0.2rem solid lightskyblue;
+    border: 0.2rem solid lightcoral;
 }
 
 .footer .contatos .insta{
     border: 0.2rem solid lightpink;
-}
-
-.footer .contatos .face{
-    border: 0.2rem solid goldenrod;
-}
-
-.footer .contatos .youtube{
-    border: 0.2rem solid lightcoral;
 }
